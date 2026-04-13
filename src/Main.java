@@ -17,28 +17,21 @@ public class Main {
                 int quantA = sc.nextInt();
 
                 if (quantA > 0) {
-                    System.out.print("Digite o 1º valor: ");
-                    double primeiroValorA = sc.nextDouble();
-                    conjuntoA.add(primeiroValorA);
+                    for (int i = 0; i < quantA ; i++) {
+                        System.out.printf("Digite o %dº valor: ", i + 1);
+                        double valor = sc.nextDouble();
+                        conjuntoA.add(valor);
 
-                    if (quantA != 1) {
-                        for (int i = 0; i < quantA-1; i++) {
-                            System.out.printf("Digite o %dº valor: ", i + 2);
-                            double valor = sc.nextDouble();
-                            conjuntoA.add(valor);
+                    }
 
-                        }
-
-                        for (int i = 0; i < conjuntoA.size(); i++) {
-                            for (int j = i + 1; j < conjuntoA.size(); j++) {
-                                if (conjuntoA.get(i).equals(conjuntoA.get(j))) {
-                                    conjuntoA.remove(j);
-                                    j--;
-                                }
+                    for (int i = 0; i < conjuntoA.size(); i++) {
+                        for (int j = i + 1; j < conjuntoA.size(); j++) {
+                            if (conjuntoA.get(i).equals(conjuntoA.get(j))) {
+                                conjuntoA.remove(j);
+                                j--;
                             }
                         }
                     }
-
                 } else {
                     System.out.println("Digite uma quantidade maior que 0");
                     continue;
@@ -55,24 +48,18 @@ public class Main {
                 int quantB = sc.nextInt();
 
                 if (quantB > 0) {
-                    System.out.print("Digite o 1º valor: ");
-                    double primeiroValorB = sc.nextDouble();
-                    conjuntoB.add(primeiroValorB);
+                    for (int i = 0; i < quantB ; i++) {
+                        System.out.printf("Digite o %dº valor: ", i + 1);
+                        double valor = sc.nextDouble();
+                        conjuntoB.add(valor);
 
-                    if (quantB != 1) {
-                        for (int i = 0; i < quantB-1 ; i++) {
-                            System.out.printf("Digite o %dº valor: ", i + 2);
-                            double valor = sc.nextDouble();
-                            conjuntoB.add(valor);
+                    }
 
-                        }
-
-                        for (int i = 0; i < conjuntoB.size(); i++) {
-                            for (int j = i + 1; j < conjuntoB.size(); j++) {
-                                if (conjuntoB.get(i).equals(conjuntoB.get(j))) {
-                                    conjuntoB.remove(j);
-                                    j--;
-                                }
+                    for (int i = 0; i < conjuntoB.size(); i++) {
+                        for (int j = i + 1; j < conjuntoB.size(); j++) {
+                            if (conjuntoB.get(i).equals(conjuntoB.get(j))) {
+                                conjuntoB.remove(j);
+                                j--;
                             }
                         }
                     }
