@@ -12,7 +12,7 @@ public class Main {
             conjuntoA.clear();
             conjuntoB.clear();
             try {
-                System.out.print("\nDigite quantos números você quer para o conjunto A: ");
+                System.out.print("\nDigite quantos elementos você quer para o conjunto A: ");
 
                 int quantA = sc.nextInt();
 
@@ -43,7 +43,7 @@ public class Main {
 
                 System.out.println();
 
-                System.out.print("\nDigite quantos números você quer para o conjunto B: ");
+                System.out.print("\nDigite quantos elementos você quer para o conjunto B: ");
 
                 int quantB = sc.nextInt();
 
