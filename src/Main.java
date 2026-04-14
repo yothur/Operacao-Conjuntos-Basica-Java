@@ -19,8 +19,7 @@ public class Main {
                 if (quantA > 0) {
                     for (int i = 0; i < quantA ; i++) {
                         System.out.printf("Digite o %dº valor: ", i + 1);
-                        double valor = sc.nextDouble();
-                        conjuntoA.add(valor);
+                        conjuntoA.add(sc.nextDouble());
 
                     }
 
@@ -50,8 +49,7 @@ public class Main {
                 if (quantB > 0) {
                     for (int i = 0; i < quantB ; i++) {
                         System.out.printf("Digite o %dº valor: ", i + 1);
-                        double valor = sc.nextDouble();
-                        conjuntoB.add(valor);
+                        conjuntoB.add(sc.nextDouble());
 
                     }
 
